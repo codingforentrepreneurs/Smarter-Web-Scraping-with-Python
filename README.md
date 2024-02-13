@@ -21,12 +21,19 @@ git clone https://github.com/codingforentrepreneurs/Smarter-Web-Scraping-with-Py
 ### (Optional) Working through the course?
 Use the `course_start` branch with:
 
+mac/linux
 ```bash
 git checkout course_start
-rm -rf .git
+rm -rf .git 
 git init
 ```
 
+windows
+```powershell
+git checkout course_start
+Remove-Item .git -Recurse -Force
+git init
+```
 ## Create a Python Virtual Environment
 
 ```bash
