@@ -16,6 +16,9 @@ cd ~/dev/smarter-scraping
 git clone https://github.com/codingforentrepreneurs/Smarter-Web-Scraping-with-Python .
 ```
 
+> Working through the course? Start with the `course-start` branch with `git checkout course_start` then remove the `.git` directory and start fresh.
+
+
 Create a Python Virtual Environment:
 - run `cd ~/dev/smarter-scraping` then...
 - mac/linux: `python3 -m venv venv`
