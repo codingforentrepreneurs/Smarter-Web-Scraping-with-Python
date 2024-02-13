@@ -1,0 +1,6 @@
+jupyter
+python-decouple
+requests
+beautifulsoup4
+openai
+openai-whisper
