@@ -3,9 +3,41 @@ Generate podcast clips related to daily top submissions on Hacker News via web s
 
 Coming soon
 
+
 ## Requirements
 - Python 3.10 and up
 - ffmpeg (required for transcribing audio with OpenAI Whisper)
+
+
+
+### A Proxy-based Web Scraping approach
+In this repo, we use a web scraping proxy service from Bright Data. Using a proxy service makes our requests more reliable. You can see the actual code for the Selenium-based remote connection here [src/helpers/brightdata.py](./src/helpers/brightdata.py).
+
+#### With Remote Proxy
+our computer -> request -> proxy -> web server -> proxy -> response -> our computer
+
+#### Without Remote Proxy
+our computer -> request -> web server -> response -> our computer
+
+### Usage
+```python
+# from 'src/2 - Connection Sample.ipynb'
+from selenium.webdriver import Remote, ChromeOptions
+
+# import this function
+from helpers.brightdata import get_sbr_connection
+
+options = ChromeOptions()
+
+# options.headless = True # old method
+options.add_argument("--headless=new") # new method
+
+url = 'https://news.ycombinator.com'
+
+with Remote(sbr_connection, options=options) as driver:
+    driver.get(url)
+    print(driver.page_source)
+```
 
 
 
