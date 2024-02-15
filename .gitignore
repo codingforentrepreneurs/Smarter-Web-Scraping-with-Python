@@ -1,3 +1,5 @@
+dataset/
+
 .env 
 .DS_Store
 local-cdn/
