@@ -4,3 +4,5 @@ requests
 beautifulsoup4
 openai
 openai-whisper
+moviepy
+pydub
