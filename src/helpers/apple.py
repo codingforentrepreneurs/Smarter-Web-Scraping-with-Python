@@ -23,6 +23,8 @@ def get_url(search_term="Python programming", max_results=10):
 def perform_search(search_term="Python programming", max_results=10):
     url = get_url(search_term=search_term, max_results=max_results)
     r = requests.get(url, headers={"Content-Type": "application/json"})
+    # if r.status_code != 200:
+    #    return []
     data = r.json()
     results = data.get('results')
     results = sorted(results, key=lambda x: x['releaseDate'], reverse=True)
