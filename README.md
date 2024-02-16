@@ -114,7 +114,7 @@ With virtual envionoment activated (e.g. `(venv)`), run:
 
 mac/linux
 ```bash
-cp .env.sample .env
+cp sample-env-file .env
 ```
 
 windows
@@ -126,6 +126,11 @@ Be sure to add your Bright Data proxy information:
 - `BRIGHT_DATA_USERNAME`
 - `BRIGHT_DATA_PASSWORD`
 - `BRIGHT_DATA_HOST`
+
+Add Ollama data too (for Running the OpenAI drop-in replacement Llama2)
+- `OPENAI_BASE_URL=http://localhost:11434/v1`
+- `OPENAI_API_KEY=ollama`
+- `OPENAI_COMPLETION_MODEL=llama2`
 
 ### Loading Environment Variables
 
