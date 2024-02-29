@@ -6,8 +6,8 @@ Coming soon
 
 ## Requirements
 - Python 3.10 and up
+- A [Bright Data Account](https://brdta.com/justin) (includes $25 credit)
 - ffmpeg (required for transcribing audio with OpenAI Whisper)
-
 
 
 ### A Proxy-based Web Scraping approach
